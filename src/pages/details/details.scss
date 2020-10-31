@@ -1,0 +1,26 @@
+.details{
+    background-color: #f5f6f7;
+    .program-details{
+        height: 130px;
+        overflow: hidden;
+    }
+    .need-attention{
+        line-height: 44px;
+        letter-spacing: 2px;
+        font-size: 28px;
+    }
+    .need-attention p{
+        margin-bottom:40px;
+    }
+    .show-more{
+        text-align: center;
+        color: #ff7e6f;
+    }
+    .details-footer{
+        position: sticky;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+

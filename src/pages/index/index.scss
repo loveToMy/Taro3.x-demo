@@ -1,0 +1,73 @@
+.index-head{
+  display: flex;
+  padding: 8px 30px 8px 20px;
+  background: linear-gradient(to right,#ff7e6f,#ff2959);
+  align-items: center;
+  .head-left{
+    width: 100px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+  }
+  .search-box{
+    flex: 1;
+    height: 68px;
+    background-color: #fff;
+    border-radius: 40px;
+    margin-left: 20px;
+    overflow: hidden;
+    &__input{
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+.nav-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  .nav-list{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .bg-icon{
+      height: 72px;
+      width: 72px;
+      background-image: url('https://m2static.228.cn/images/icon.png');
+      background-size: 150px;
+    }
+  }
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  .show-box{
+    width: 210px;
+    .show-image{
+      width: 100%;
+      height: 280px;
+      border-radius: 20px;
+    }
+    .title-ellipsis{
+      height: 68px;
+      line-height: 36px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+  }
+  .venue-box{
+    width: 320px;
+    .venue-image{
+      width: 100%;
+      height: 280px;
+      border-radius: 20px;
+    }
+  }
+}

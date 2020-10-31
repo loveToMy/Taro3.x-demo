@@ -1,0 +1,32 @@
+.search{
+    display: flex;
+    height: 68px;
+    &__box{
+        display: flex;
+        height: 100%;
+        flex: 1;
+        background-color: #f3f4f5;
+        border-radius: 34px;
+        overflow: hidden;
+    }
+    &__icon{
+        height: 100%;
+        width: 60px;
+        background-image: url(https://m2static.228.cn/images/icon.png);
+        background-size: 300px;
+        background-position: 0 -5752px;
+        transform: translate(20px,20px);
+    }
+    &__input{
+        flex: 1;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    &__cancel{
+        height: 100%;
+        line-height: 68px;
+        width: 80px;
+        text-align: center;
+    }
+}

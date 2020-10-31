@@ -1,0 +1,16 @@
+.answer{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 0 40px;
+    height: 90px;
+    line-height: 90px;
+    border-radius: 20px;
+    background-color: #fff;
+    .right-icons{
+        width: 24px;
+        height: 24px;
+        background-size: 100px;
+        background-position-y: -150px;
+    }
+}

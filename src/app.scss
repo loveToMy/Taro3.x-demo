@@ -1,0 +1,82 @@
+
+$numbers:(
+  10:'10px',
+  20:'20px',
+  30:'30px',
+  40:'40px',
+  50:'50px',
+  60: '60px'
+);
+
+$font-sizes:(
+  xl: '44px',
+  l: '32px',
+  md: '28px',
+  sm: '26px',
+  xs: '24px'
+);
+$colors:(
+  gray: #ccc,
+  gray-1: #7b8187,
+  gray-2: #999,
+  gray-3: #82888f,
+  gray-4: #b5bbc1,
+  dark-gray:#5f646a,
+  price: #ff3a56,
+  white: #fff
+);
+
+@each $i,$number in $numbers {
+  .mt-#{$i} {
+    margin-top: #{$number};
+  }
+  .ml-#{$i} {
+    margin-left: #{$number}
+  }
+  .mr-#{$i} {
+    margin-right: #{$number};
+  }
+  .mb-#{$i} {
+    margin-bottom: #{$number};
+  }
+  .pt-#{$i} {
+    padding-top: #{$number};
+  }
+  .pl-#{$i} {
+    padding-left: #{$number}
+  }
+  .pr-#{$i} {
+    padding-right: #{$number};
+  }
+  .pb-#{$i} {
+    padding-bottom: #{$number};
+  }
+}
+
+@each $sizeKey,$size in $font-sizes {
+  .fs-#{$sizeKey} {
+      font-size: #{$size};
+  }
+}
+@each $key,$color in $colors {
+  .text-#{$key} {
+    color: #{$color}
+  }
+}
+
+.fw-7{
+  font-weight: 700;
+}
+.bg-icons{
+  background-image: url('https://m2static.228.cn/images/icon.png');
+}
+.bg-icons2{
+  background-image: url('https://m2static.228.cn/images/product-icon.png');
+}
+
+.taro-ellipsis {overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.page{
+  display: flex;
+  flex-direction: column;
+  font-size: 28px;
+}

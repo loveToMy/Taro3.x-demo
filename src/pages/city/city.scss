@@ -1,0 +1,12 @@
+.hot-city{
+    display: flex;
+    flex-wrap: wrap;
+    .hot-city-item{
+        width: 25%;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        color: #7b8187;
+
+    }
+}
