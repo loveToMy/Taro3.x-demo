@@ -1,12 +1,18 @@
 import React from 'react';
+import Taro from '@tarojs/taro'
 import { View, Text,Image } from '@tarojs/components'
 import './index.scss'
 class CopyRight extends React.Component {
+  uniJump(page) {
+    Taro.navigateTo({
+      url: page
+    })
+  }
   render() {
     return (
       <View className="copyright fs-xs text-gray-3 pt-40 pb-40">
         <View className="mb-10">
-          <Text className="ml-30 mr-30">最新资讯</Text>
+          <Text className="ml-30 mr-30" onClick={() => this.uniJump('/pages/notice/notice')}>最新资讯</Text>
           <Text className="ml-30 mr-30">合作招商</Text>
           <Text className="ml-30 mr-30">联系我们</Text>
         </View>

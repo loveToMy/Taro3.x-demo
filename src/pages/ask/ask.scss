@@ -1,0 +1,31 @@
+.ask-head{
+    display: flex;
+    justify-content: flex-end;
+    .ask-icon{
+        background-size: 100px;
+        background-position-y: -3890px;
+        width: 44px;
+        height: 44px;
+    }
+}
+.textarea-box{
+    display: flex;
+    justify-content: center;
+}
+.ask-textarea{
+    border: 1px solid #ccd1d6;
+    padding: 20px;
+    border-radius: 20px;
+}
+.ask-btn{
+    height: 88px;
+    font-size: 30px;
+    border-radius: 44px;
+    letter-spacing: 4px;
+    line-height: 88px;
+    margin: 0 40px;
+    margin-top: 40px;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #ff7e6f, #ff2959);
+}

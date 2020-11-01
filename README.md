@@ -6,7 +6,7 @@
 
 ```bash
 git clone
-//进入文件夹
+//进入文件夹 安装依赖
 npm install
 yarn install
 ```

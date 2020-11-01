@@ -16,14 +16,16 @@ const care = `<div class="need-attention">
                     d)需要开具发票的购票客户，请您在演出/活动开始5天前提供相关发票信息至在线客服，演出/活动结束后将统一由演出/活动主办单位开具增值税发票。
                   </div>`;
 const answerList = [
-  {id:1,text:'FAQ'},
-  {id:2,text:'在线问答'}
+  {id:1,text:'FAQ',page:'/pages/answer/answer'},
+  {id:2,text:'在线问答',page:'/pages/ask/ask'}
 ]
 
 export default function Details() {
   const [showMore,setShowMore] = useState(false);
-  const back = () =>{
-    Taro.navigateBack()
+  const goPage = (page) =>{
+    Taro.navigateTo({
+      url: page
+    })
   }
   return(
     <View className="page details">
@@ -46,8 +48,8 @@ export default function Details() {
       {
         answerList.map(item => {
           return (
-            <View key={item.id} className="mb-30 ml-40 mr-40">
-              <AnswerList title={item.text}/>
+            <View key={item.id} className="mb-30 ml-40 mr-40" onClick={() => goPage(item.page)}>
+              <AnswerList title={item.text} />
             </View>
           )
         })

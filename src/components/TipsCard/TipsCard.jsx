@@ -4,6 +4,11 @@ import {View, Text} from '@tarojs/components'
 import './index.scss';
 
 export default function TipsCard (){
+    const goVenue = () =>{
+        Taro.navigateTo({
+            url: '/pages/venueDetails/venueDetails'
+        })
+    }
     return(
         <View className="tips-card">
             <View className="text-gray-2 fs-sm">
@@ -11,7 +16,7 @@ export default function TipsCard (){
                 <View>本演出09.25上午11:18开始预售</View>
             </View>
             <View className="see-more fs-xs">查看更多</View>
-            <View className="address-info">
+            <View className="address-info" onClick={goVenue}>
                 <View className="fs-sm text-dark-gray mb-10 tips-item">
                     <Text className="bg-icons2 address"></Text>
                     <Text>2020.11.13</Text>

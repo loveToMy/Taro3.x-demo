@@ -5,27 +5,31 @@ export default {
     'pages/search/search',
     'pages/home/home',
     'pages/details/details',
-    'pages/city/city'
+    'pages/city/city',
+    'pages/venueDetails/venueDetails',
+    'pages/ask/ask',
+    'pages/answer/answer',
+    'pages/notice/notice'
   ],
   tabBar: {
     list: [{
-      'iconPath': 'resource/icon/index.png',
-      'selectedIconPath': 'resource/icon/index_active.png',
+      'iconPath': 'static/icon/index.png',
+      'selectedIconPath': 'static/icon/index_active.png',
       pagePath: 'pages/index/index',
       text: '首页'
     }, {
-      'iconPath': 'resource/icon/category.png',
-      'selectedIconPath': 'resource/icon/category_active.png',
+      'iconPath': 'static/icon/category.png',
+      'selectedIconPath': 'static/icon/category_active.png',
       pagePath: 'pages/category/category',
       text: '热门'
     }, {
-      'iconPath': 'resource/icon/search.png',
-      'selectedIconPath': 'resource/icon/search_active.png',
+      'iconPath': 'static/icon/search.png',
+      'selectedIconPath': 'static/icon/search_active.png',
       pagePath: 'pages/search/search',
       text: '搜索'
     },{
-      'iconPath': 'resource/icon/home.png',
-      'selectedIconPath': 'resource/icon/home_active.png',
+      'iconPath': 'static/icon/home.png',
+      'selectedIconPath': 'static/icon/home_active.png',
       pagePath: 'pages/home/home',
       text: '我的'
     }],
