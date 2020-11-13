@@ -3,6 +3,7 @@ import Taro from '@tarojs/taro'
 import { View,Text,ScrollView } from '@tarojs/components'
 import { AtNavBar } from 'taro-ui'
 import CopyRight from '../../components/CopyRight/CopyRight'
+import { shuffle } from '../../common/tools/tools.js'
 import "taro-ui/dist/style/components/nav-bar.scss";
 import "taro-ui/dist/style/components/icon.scss";
 import './notice.scss'
@@ -77,16 +78,6 @@ export default function Notice() {
     const [noticeList,setNoticeList] = useState(originalList);
     const [newsList,setNewsList] = useState(news);
     const navList = ['网站公告','最新资讯'];
-    //打乱顺序
-    function shuffle(arr) {
-        for (let i=arr.length-1; i>=0; i--) {
-            let rIndex = Math.floor(Math.random()*(i+1));
-            let temp = arr[rIndex];
-            arr[rIndex] = arr[i];
-            arr[i] = temp;
-        }
-        return arr;
-    }
     const back = () =>{
         Taro.navigateBack()
     }

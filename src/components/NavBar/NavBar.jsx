@@ -8,6 +8,22 @@ export default function NavBar() {
     const back = () => {
         Taro.navigateBack()
     }
+    const collect = () =>{
+        Taro.showModal({
+            title:'未登录',
+            content: '请登录后再添加喜欢',
+            confirmColor: '#007aff',
+            confirmText: '去登录',
+            success: (res) =>{
+                if (res.confirm) {
+                    Taro.navigateTo({
+                        url: '/pages/login/login'
+                    })
+                }
+            },
+
+        })
+    }
     return (
         <View className="details-head">
             <View className="head-bg">
@@ -19,7 +35,7 @@ export default function NavBar() {
             <View className="head-icon">
             <View className="goback bg-icons" onClick={back}></View>
             <View className="right-icon">
-                <Text className="love bg-icons"></Text>
+                <Text className="love bg-icons" onClick={collect}></Text>
                 <Text className="share bg-icons"></Text>
             </View>
             </View>

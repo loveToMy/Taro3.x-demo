@@ -9,7 +9,9 @@ export default {
     'pages/venueDetails/venueDetails',
     'pages/ask/ask',
     'pages/answer/answer',
-    'pages/notice/notice'
+    'pages/notice/notice',
+    'pages/login/login',
+    'pages/agree/agree'
   ],
   tabBar: {
     list: [{

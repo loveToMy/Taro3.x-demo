@@ -1,0 +1,128 @@
+.login-bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://m2static.228.cn/images/loginBg.jpg) no-repeat 50%;
+}
+.head-icon{
+    width: 60px;
+    height: 62px;
+    background-position-y: -6908px;
+    background-size: 300px;
+}
+.login{
+    margin: 0 100px;
+    &__title{
+        font-size: 64px;
+    }
+    &__content{
+        .label{
+            display: flex;
+            align-items: center;
+            height: 88px;
+            border: 2px solid rgba(255,255,255,0.6);
+            border-radius: 44px;
+            overflow: hidden;
+            .login-input{
+                flex: 1;
+                text-align: center;
+                // background-color: #fff;
+                height: 100%;
+                line-height: 88px;
+                display: flex;
+                align-items: center;
+                font-size: 32px;
+                color: #fff;
+            }
+            .code-safe{
+                color: #fff;
+                font-size: 32px;
+                flex: 1;
+                padding-left: 80px;
+            }
+            .login-user,
+            .login-pwd,
+            .pwd-show,
+            .user-clear{
+                position: relative;
+                z-index: 1;
+                width: 60px;
+                height: 60px;
+                background-size: 170px;
+            }
+            .login-user{
+                background-position:14px -483px;
+                transform: translateX(30px);
+            }
+            .user-clear{
+                background-position-y: -678px;
+            }
+            .login-pwd{
+                background-position: 14px -548px;
+                transform: translateX(30px);
+            }
+            .pwd-show{
+                background-position-y: -234px;
+            }
+            .get-code{
+                width: 200px;
+                color: #ff3a56;
+            }
+        }
+    }
+    .exempt{
+        color: rgba(255,255,255,0.7);
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        .taro-checkbox_checked{
+            background-color: transparent;
+            transform: scale(0.6);
+        }
+    }
+    .login-btn{
+        height: 90px;
+        background-color: rgba(255,255,255,0.7);
+        color: #fff;
+        line-height: 90px;
+        text-align: center;
+        border-radius: 45px;
+        font-size: 32px;
+        opacity: 0.8;
+    }
+    .login-active{
+        background: linear-gradient(135deg, #ff7e6f 0%, #ff2959 100%);
+    }
+    .other-login{
+        display: flex;
+        justify-content: space-around;
+        margin: 76px 50px 0;
+        .baidu,
+        .xinlang,
+        .qq{
+            width: 46px;
+            height: 46px;
+            background-size: 140px;
+        }
+        .xinlang{
+            background-position-y: -68px;
+        }
+        .qq{
+            background-position-y: -132px;
+        }
+    }
+    .login-foot{
+        text-align: center;
+        color: #fff;
+        margin-top: 160px;
+        .register{
+            color: #ff3a56;
+            text-decoration: underline;
+        }
+        .agree{
+            opacity: 0.5;
+        }
+    }
+}

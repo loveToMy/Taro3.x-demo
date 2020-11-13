@@ -1,0 +1,30 @@
+.goods-box{
+    display: flex;
+    border-bottom: 1px solid #fafafb;
+    &__left{
+        position: relative;
+        .goods-image{
+            width: 170px;
+            height: 226px;
+            border-radius: 20px;
+            box-shadow: 0px 1px 4px 0px rgba(58, 64, 69, 0.3);
+        }
+        .ticket{
+            position: absolute;
+            top: 0;
+            display: block;
+            height: 40px;
+            line-height: 40px;
+            color: #fff;
+            font-style: normal;
+            position: absolute;
+            top: 0;
+            border-radius: 20px 0;
+            padding: 0 10px;
+            left: 0;
+            text-align: center;
+            background: linear-gradient(to right, #ff7e6f, #ff2959);
+            box-shadow: 0px 2px 6px 0px rgba(255, 37, 68, 0.2);
+        }
+    }
+}

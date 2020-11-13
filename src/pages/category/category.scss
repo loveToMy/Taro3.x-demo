@@ -17,35 +17,8 @@
         background-size: 300px;
         background-position: 0 -5880px;
     }
-}
-.goods-box{
-    display: flex;
-    border-bottom: 1px solid #fafafb;
-    &__left{
-        position: relative;
-        .goods-image{
-            width: 170px;
-            height: 226px;
-            border-radius: 20px;
-            box-shadow: 0px 1px 4px 0px rgba(58, 64, 69, 0.3);
-        }
-        .ticket{
-            position: absolute;
-            top: 0;
-            display: block;
-            height: 40px;
-            line-height: 40px;
-            color: #fff;
-            font-style: normal;
-            position: absolute;
-            top: 0;
-            border-radius: 20px 0;
-            padding: 0 10px;
-            left: 0;
-            text-align: center;
-            background: linear-gradient(to right, #ff7e6f, #ff2959);
-            box-shadow: 0px 2px 6px 0px rgba(255, 37, 68, 0.2);
-        }
+    &__icon__up{
+        background-position: 0 -5989px;
     }
 }
 .load-more{
@@ -58,4 +31,39 @@
     background: #fff;
     box-shadow: 0px 2px 6px 0px rgba(255, 58, 86, 0.2);
     color: #ff2959;
+}
+.mask{
+    position: fixed;
+    top: 180px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    transition: all 0.3s;
+    overflow: hidden;
+    .type-tab{
+        position: relative;
+        z-index: -1;
+        background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 0 0 40px 40px;
+        transition: transform 0.3s;
+        transform: translateY(-100%);   
+        .type-list{
+            width: calc(100% / 3);
+            height: 90px;
+            line-height: 90px;
+            text-align: center;
+        }
+        .type-active{
+            color: #ff2959;
+        }
+        &.show{
+            transform: translateY(0);
+        }
+    }
+    &.show{
+        background: rgba(0,0,0,.4);
+    }
 }

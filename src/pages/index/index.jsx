@@ -67,6 +67,11 @@ export default class Index extends Component {
       url: '/pages/details/details'
     })
   }
+  jumpCategory(text){
+    Taro.switchTab({
+      url: '/pages/category/category?text=' + text
+    })
+  }
   goCity(){
     Taro.navigateTo({
       url: '/pages/city/city'
@@ -89,7 +94,11 @@ render () {
       <View className="nav-wrapper pt-50 pb-50 pr-40 pl-40">
         {this.state.navList.map((item,index) => {
           return(
-            <View className={["nav-list text-gray-1" ,index > 3 ? 'mt-50' : ''].join(" ")} key={index}>
+            <View 
+              className={["nav-list text-gray-1" ,index > 3 ? 'mt-50' : ''].join(" ")} 
+              key={index}
+              onClick={() => this.jumpCategory(item.text)}
+            >
               <View className="bg-icon" style={item.iconPositon}></View>
               <Text>{item.text}</Text>
             </View>
